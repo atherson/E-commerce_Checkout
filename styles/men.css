@@ -12,22 +12,6 @@ li{
     list-style: none;
 }
 
-.progress-container {
-    position:fixed; /* Ensures it stays fixed to the top */
-    top: 0;
-    left: 0;
-    width: 100%; /* Stretches across the entire width of the viewport */
-    height: 3px; /* Thin bar */
-    background-color: #f3f3f3; /* Light background for contrast */
-    z-index: 9999; /* Ensures it appears above other elements */
-}
-.progress-bar {
-    width: 0; /* Initial width (will grow dynamically) */
-    height: 100%; /* Matches the height of the container */
-    background-color: #4caf50; /* Green progress indicator */
-    transition: width 0.25s ease-out; /* Smooth animation for progress */
-}
-
 header {
     display: flex;
     padding: 0 16px;
@@ -315,7 +299,15 @@ main {
     border-radius: 5px;
     cursor: pointer;
   }
-  
+  #checkout{
+    gap: 5px;
+    margin-top: 5px;
+    width: 100%;
+    padding:10px;
+    border-radius: 5px;
+    background-color:yellowgreen;
+
+}
 #product-grid {
     display: flex;
     flex-wrap: wrap;

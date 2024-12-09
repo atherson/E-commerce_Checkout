@@ -2,12 +2,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const cartButton = document.getElementById('cart-button');
     const cartPanel = document.getElementById('cart-panel');
     const backButton = document.getElementById('back-button');
+    const checkOut = document.getElementById('checkout');
     const addToCartButtons = document.querySelectorAll('.add-to-cart');
     const cartItemsList = document.getElementById('cart-items');
     const totalPriceDisplay = document.getElementById('total-price');
     const clearCartButton = document.getElementById('clear-cart');
     const searchInput = document.getElementById('search-bar');
-    const progressBar = document.getElementById('progress-bar'); // Progress bar element
+
+
     let cartItems = [];
 
     // Function to update the cart display
@@ -64,6 +66,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     backButton.addEventListener('click', () => {
         cartPanel.classList.remove('open'); // Close the cart panel
+    });
+
+    checkOut.addEventListener('click',() => {
+        window.location.href='checkout.html'
     });
 
     // Add item to cart functionality
